@@ -15,7 +15,7 @@
             color: #333;
         }
         header {
-            background-color: #ff99cc; /* Pink */
+            background-color: #ff66b2; /* Softer Pink */
             color: white;
             padding: 20px 0;
             text-align: center;
@@ -58,7 +58,7 @@
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
         footer {
-            background-color: #ff99cc; /* Pink */
+            background-color: #ff66b2; /* Softer Pink */
             color: white;
             text-align: center;
             padding: 10px;
@@ -67,23 +67,41 @@
             margin: 0;
         }
         h2 {
-            color: #ff99cc; /* Pink */
+            color: #ff66b2; /* Softer Pink */
         }
-        /* New Styling for Languages Provided Section */
+        /* Styling for Languages Provided Section */
         #languages {
             background-color: #fff;
-            border: 1px solid #ddd;
             padding: 20px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-top: 30px;
         }
-        #languages ul {
-            list-style: none;
+        #languages h2 {
+            font-size: 24px;
+            color: #ff66b2;
+            margin-bottom: 20px;
+        }
+        #languages .languages-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin: 0;
             padding: 0;
+            list-style: none;
         }
-        #languages li {
-            padding: 5px;
-            font-size: 16px;
+        #languages .languages-list li {
+            font-size: 18px;
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        #languages .languages-list li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
         }
         @media (max-width: 768px) {
             .service {
@@ -108,7 +126,7 @@
     <!-- About Me Section -->
     <section id="about">
         <h2>About Me</h2>
-        <p>Hey there! I’m Silvia, a passionate language enthusiast. I offer top-notch translation services with a focus on accuracy and cultural understanding. Whether you need to translate documents, websites, subtitles or any other content, I’m here to help you bridge language barriers effectively!</p>
+        <p>Hey there! I’m Silvia, a passionate language enthusiast. I offer top-notch translation services with a focus on accuracy and cultural understanding. Whether you need to translate documents, websites, subtitles, or any other content, I’m here to help you bridge language barriers effectively!</p>
     </section>
 
     <!-- Services Section -->
@@ -131,7 +149,7 @@
                 <h3>Copywriting Services</h3>
                 <p>Need engaging and persuasive copy? I provide high-quality copywriting for websites, blogs, ads, and more to help your brand connect with the right audience.</p>
             </div>
-            <!-- Language Tutoring Online (Now aligned correctly) -->
+            <!-- Language Tutoring Online (Aligned) -->
             <div class="service">
                 <h3>Language Tutoring Online</h3>
                 <p>Learn a new language from the comfort of your home. I offer personalized online language tutoring sessions to help you become fluent in English, French, Slovak, and more!</p>
@@ -141,12 +159,15 @@
 
     <!-- Languages Provided Section -->
     <section id="languages">
-        <h2>Languages Provided</h2>
-        <ul>
+        <h2>Languages I Offer</h2>
+        <ul class="languages-list">
             <li>English</li>
             <li>French</li>
             <li>Slovak</li>
             <li>Czech</li>
+            <li>Spanish</li>
+            <li>German</li>
+            <li>Italian</li>
             <li>And more...</li>
         </ul>
     </section>
@@ -154,16 +175,17 @@
     <!-- Contact Section -->
     <section id="contact">
         <h2>Let's catch up!</h2>
-        <p>If you're interested in working together, don't hesitate to reach out</p>
+        <p>If you're interested in working together, don't hesitate to reach out:</p>
         <ul>
             <li>Email: <a href="mailto:info@translations.com">info@translations.com</a></li>
-
+            <li>Phone: (555) 123-4567</li>
+            <li>Address: 123 Translation St, Language City, 12345</li>
         </ul>
     </section>
 </div>
 
 <footer>
-    <p>&copy; 2026 Translation and Language Services. All rights reserved.</p>
+    <p>&copy; 2025 Translation and Language Services. All rights reserved.</p>
 </footer>
 
 </body>
